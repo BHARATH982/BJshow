@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bjshow</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script> 
+       <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     
+   
+   
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <style>
+     
+       body{
+             background-image: linear-gradient(to left,#edebf7,#edebf7);
+ 
+            color: black;
+       }
+      .btn-success:hover {
+  color: green;
+  background-color: white;
+  border-color: #5b288e;
+}
+
+.modal-header{
+ 
+ background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-body{
+background-image: linear-gradient(to left,#edebf7,#edebf7);
+
+}
+
+     </style>
+    </head>
+
+   
+ 
+<body   class="p-0 m-0 border-0 bd-example"  >  
+   
+   
+   
+<nav id ="top" class="navbar navbar-expand-lg bg-dark"  >
+ 
+  <div class="container-fluid">
+ 
+    
+    
+     <h2 class="ani"  style="color:white"> <i>BJSHOW </i></h2>
+     
+                                                                                                                          
+   
+   <!--  <div><button class ="change" >Darkmode</button> </div> -->
+
+     
+     
+ 
+      <div id="loggedout" class="p-3 mb-2x  text-white">
+
+<a href="#about"><button class="btn btn-red" ><code style="color:white  ;font-size:20px">About</code></button></a>
+<a href="#about"><button class="btn btn-red" ><code style="color:white  ;font-size:20px">Contact</code></button></a>
+
+
+
+<button style="float: right;" type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#signupmodal">
+<i class="bi bi-person"></i><code style="color:white ;font-size:20px">signup</code>
+</button>
+
+
+
+<button style="float: right;" type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#loginmodal">
+<i class="bi bi-person"></i><code style="color:white  ;font-size:20px">Login</code>
+</button>
+
+
+
+
+   
+   
+
+
+</div>
+
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodallabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="examplemodallabel"><code style="color:Red">Log in</code></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+     
+    
+ <form action="demologin" method="post" name="logindemo">
+		<table>
+			<tr>
+				<td><label> Username </label></td>
+				<td><input type="text" name="uname" placeholder="Enter username"></td>
+			</tr>
+			<tr>
+				<td><label> Password </label></td>
+				<td><input type="password" name="password" placeholder="Enter password"></td>
+			</tr>
+	
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+ 
+</div>
+</div>
+     
+     
+  
+</div>
+</div>
+
+
+<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="loginmodallabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-content" data-tor="show(p):{rotateX.from(90) pull.down(half)} bounce perspective-self(4000px)">
+      <div class="modal-header">
+       
+        <h2  id="examplemodallabel"><code style="color:red">Signup</code></h2> 
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+    
+     
+     <div class="container">
+     
+ <form action="demosignup" method="post" >
+
+		<table>
+		   
+			<tr>
+				<td><label> Username </label></td>
+				<td><input type="text" name="uname" placeholder="Enter username"></td>
+			</tr>
+			<tr>
+				<td><label> Password </label></td>
+				<td><input type="text" name="password" placeholder="Enter password"></td>
+			</tr>
+			
+			<tr>
+				<td><label>Email </label></td>
+				<td><input type="email" name="email" placeholder="Enter username"></td>
+			</tr>
+			<tr>
+				<td><label>phone</label></td>
+				<td><input type="number" name="phone" placeholder="Enter phonenumber"></td>
+			</tr>
+			
+		
+	
+			<tr>
+				<td></td>
+				<td><input type="submit"></td>
+			</tr>
+		</table>
+	</form>
+  </div>
+</div>
+</div>
+    </div>
+     </div>
+   
+</div>
+
+
+
+
+
+
+   </div> 
+</nav>
+
+<!-- -Ending of nav bar -->
+
+ 
+ <div class="text-center">
+   <div class="container" >
+   <br><br><br>
+<nobr>  A  &emsp;&emsp;&emsp;&emsp; 
+
+       <code id="b1">   <button type="button" onclick="b1()" class="btn btn-success">1</button></code>
+       <code id="b2">   <button type="button" onclick="b2()" class="btn btn-success">2</button></code>
+       <code id="b3">   <button type="button" onclick="b3()" class="btn btn-success">3</button></code>           
+       <code id="b4">   <button type="button" onclick="b4()" class="btn btn-success">4</button></code>
+       <code id="b5">   <button type="button" onclick="b5()" class="btn btn-success">5</button></code>
+       <code id="b6">   <button type="button" onclick="b6()" class="btn btn-success">6</button></code>
+       <code id="b7">   <button type="button" onclick="b7()" class="btn btn-success">7</button></code>
+       <code id="b8">   <button type="button" onclick="b8()" class="btn btn-success">8</button></code>
+       <code id="b9">   <button type="button" onclick="b9()" class="btn btn-success">9</button></code>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <code id="b10">   <button type="button" onclick="b10()" class="btn btn-success">10</button></code>
+       <code id="b11">   <button type="button" onclick="b11()" class="btn btn-success">11</button></code>
+       <code id="b12">   <button type="button" onclick="b12()" class="btn btn-success">12</button></code>
+       <code id="b13">   <button type="button" onclick="b13()" class="btn btn-success">13</button></code>
+       <code id="b14">   <button type="button" onclick="b14()" class="btn btn-success">14</button></code>
+       <code id="b15">   <button type="button" onclick="b15()" class="btn btn-success">15</button></code>
+       <code id="b16">   <button type="button" onclick="b16()" class="btn btn-success">16</button></code>
+       <code id="b17">   <button type="button" onclick="b17()" class="btn btn-success">17</button></code>
+       <code id="b18">   <button type="button" onclick="b18()" class="btn btn-success">18</button></code> 
+</nobr>
+<br><br>
+
+
+<nobr>  B  &emsp;&emsp;&emsp;&emsp; 
+
+       <code id="b1">  <button   type="button" onclick="b1()" class="btn btn-success">1</button></code>
+       <code id="b2">   <button type="button" onclick="b2()" class="btn btn-success">2</button></code>
+       <code id="b3">   <button type="button" onclick="b3()" class="btn btn-success">3</button></code>           
+       <code id="b4">   <button type="button" onclick="b4()" class="btn btn-success">4</button></code>
+       <code id="b5">   <button type="button" onclick="b5()" class="btn btn-success">5</button></code>
+       <code id="b6">   <button type="button" onclick="b6()" class="btn btn-success">6</button></code>
+       <code id="b7">   <button type="button" onclick="b7()" class="btn btn-success">7</button></code>
+       <code id="b8">   <button type="button" onclick="b8()" class="btn btn-success">8</button></code>
+       <code id="b9">   <button type="button" onclick="b9()" class="btn btn-success">9</button></code>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <code id="b10">   <button type="button" onclick="b10()" class="btn btn-success">10</button></code>
+       <code id="b11">   <button type="button" onclick="b11()" class="btn btn-success">11</button></code>
+       <code id="b12">   <button type="button" onclick="b12()" class="btn btn-success">12</button></code>
+       <code id="b13">   <button type="button" onclick="b13()" class="btn btn-success">13</button></code>
+       <code id="b14">   <button type="button" onclick="b14()" class="btn btn-success">14</button></code>
+       <code id="b15">   <button type="button" onclick="b15()" class="btn btn-success">15</button></code>
+       <code id="b16">   <button type="button" onclick="b16()" class="btn btn-success">16</button></code>
+       <code id="b17">   <button type="button" onclick="b17()" class="btn btn-success">17</button></code>
+       <code id="b18">   <button type="button" onclick="b18()" class="btn btn-success">18</button></code> 
+</nobr>
+<br><br>
+
+<nobr>  C  &emsp;&emsp;&emsp;&emsp; 
+
+       <code id="b1">  <button   type="button" onclick="b1()" class="btn btn-success">1</button></code>
+       <code id="b2">   <button type="button" onclick="b2()" class="btn btn-success">2</button></code>
+       <code id="b3">   <button type="button" onclick="b3()" class="btn btn-success">3</button></code>           
+       <code id="b4">   <button type="button" onclick="b4()" class="btn btn-success">4</button></code>
+       <code id="b5">   <button type="button" onclick="b5()" class="btn btn-success">5</button></code>
+       <code id="b6">   <button type="button" onclick="b6()" class="btn btn-success">6</button></code>
+       <code id="b7">   <button type="button" onclick="b7()" class="btn btn-success">7</button></code>
+       <code id="b8">   <button type="button" onclick="b8()" class="btn btn-success">8</button></code>
+       <code id="b9">   <button type="button" onclick="b9()" class="btn btn-success">9</button></code>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <code id="b10">   <button type="button" onclick="b10()" class="btn btn-success">10</button></code>
+       <code id="b11">   <button type="button" onclick="b11()" class="btn btn-success">11</button></code>
+       <code id="b12">   <button type="button" onclick="b12()" class="btn btn-success">12</button></code>
+       <code id="b13">   <button type="button" onclick="b13()" class="btn btn-success">13</button></code>
+       <code id="b14">   <button type="button" onclick="b14()" class="btn btn-success">14</button></code>
+       <code id="b15">   <button type="button" onclick="b15()" class="btn btn-success">15</button></code>
+       <code id="b16">   <button type="button" onclick="b16()" class="btn btn-success">16</button></code>
+       <code id="b17">   <button type="button" onclick="b17()" class="btn btn-success">17</button></code>
+       <code id="b18">   <button type="button" onclick="b18()" class="btn btn-success">18</button></code> 
+</nobr>
+<br><br>
+
+
+<nobr>  B  &emsp;&emsp;&emsp;&emsp; 
+
+       <code id="b1">  <button   type="button" onclick="b1()" class="btn btn-success">1</button></code>
+       <code id="b2">   <button type="button" onclick="b2()" class="btn btn-success">2</button></code>
+       <code id="b3">   <button type="button" onclick="b3()" class="btn btn-success">3</button></code>           
+       <code id="b4">   <button type="button" onclick="b4()" class="btn btn-success">4</button></code>
+       <code id="b5">   <button type="button" onclick="b5()" class="btn btn-success">5</button></code>
+       <code id="b6">   <button type="button" onclick="b6()" class="btn btn-success">6</button></code>
+       <code id="b7">   <button type="button" onclick="b7()" class="btn btn-success">7</button></code>
+       <code id="b8">   <button type="button" onclick="b8()" class="btn btn-success">8</button></code>
+       <code id="b9">   <button type="button" onclick="b9()" class="btn btn-success">9</button></code>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <code id="b10">   <button type="button" onclick="b10()" class="btn btn-success">10</button></code>
+       <code id="b11">   <button type="button" onclick="b11()" class="btn btn-success">11</button></code>
+       <code id="b12">   <button type="button" onclick="b12()" class="btn btn-success">12</button></code>
+       <code id="b13">   <button type="button" onclick="b13()" class="btn btn-success">13</button></code>
+       <code id="b14">   <button type="button" onclick="b14()" class="btn btn-success">14</button></code>
+       <code id="b15">   <button type="button" onclick="b15()" class="btn btn-success">15</button></code>
+       <code id="b16">   <button type="button" onclick="b16()" class="btn btn-success">16</button></code>
+       <code id="b17">   <button type="button" onclick="b17()" class="btn btn-success">17</button></code>
+       <code id="b18">   <button type="button" onclick="b18()" class="btn btn-success">18</button></code> 
+       </nobr>
+
+<br><br>
+
+
+
+<nobr>  E  &emsp;&emsp;&emsp;&emsp; 
+
+       <code id="b1">  <button   type="button" onclick="b1()" class="btn btn-success">1</button></code>
+       <code id="b2">   <button type="button" onclick="b2()" class="btn btn-success">2</button></code>
+       <code id="b3">   <button type="button" onclick="b3()" class="btn btn-success">3</button></code>           
+       <code id="b4">   <button type="button" onclick="b4()" class="btn btn-success">4</button></code>
+       <code id="b5">   <button type="button" onclick="b5()" class="btn btn-success">5</button></code>
+       <code id="b6">   <button type="button" onclick="b6()" class="btn btn-success">6</button></code>
+       <code id="b7">   <button type="button" onclick="b7()" class="btn btn-success">7</button></code>
+       <code id="b8">   <button type="button" onclick="b8()" class="btn btn-success">8</button></code>
+       <code id="b9">   <button type="button" onclick="b9()" class="btn btn-success">9</button></code>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <code id="b10">   <button type="button" onclick="b10()" class="btn btn-success">10</button></code>
+       <code id="b11">   <button type="button" onclick="b11()" class="btn btn-success">11</button></code>
+       <code id="b12">   <button type="button" onclick="b12()" class="btn btn-success">12</button></code>
+       <code id="b13">   <button type="button" onclick="b13()" class="btn btn-success">13</button></code>
+       <code id="b14">   <button type="button" onclick="b14()" class="btn btn-success">14</button></code>
+       <code id="b15">   <button type="button" onclick="b15()" class="btn btn-success">15</button></code>
+       <code id="b16">   <button type="button" onclick="b16()" class="btn btn-success">16</button></code>
+       <code id="b17">   <button type="button" onclick="b17()" class="btn btn-success">17</button></code>
+       <code id="b18">   <button type="button" onclick="b18()" class="btn btn-success">18</button></code> 
+</nobr>
+<br><br>
+
+
+
+
+</div>
+</div>
+
+<br><br><br><br><br>
+
+<div class="text-center">
+
+<img src="screen.jpg">
+</div>
+<br><br>
+<div class="text-center">
+<div id="ok">
+
+</div>
+</div>
+
+<br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+ 
+ <div class="footer bg-dark"  >
+ 
+  <div class="container text-center">
+  
+  <div id="about">
+      <br><br><br>
+      <div class="row">
+ 
+    <div class="col-sm-3">
+        <p style="color:white"> This is website created by inspiring bookmyshow and developed to enhance my full stack skills</p>
+        </div>
+        <div class="col-sm-3"></div> <div class="col-sm-3"></div> 
+        
+         <div class="col-sm-3">
+       <h5 style="color:white"> Contacts </h5> <p style="color:white"> BHARATH <br> 9345400654</p>
+        </div>
+        
+        
+        </div>
+    <hr style="color:white">
+    </div>
+    
+    
+    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-facebook"></i
+		      ></a>
+		
+		      <!-- Twitter -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-twitter"></i
+		      ></a>
+		
+		      <!-- Google -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-google"></i
+		      ></a>
+		
+		      <!-- Instagram -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-instagram"></i
+		      ></a>
+		
+		      <!-- Linkedin -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-linkedin"></i
+		      ></a>
+		
+		      <!-- Github -->
+		      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+		        ><i class="bi bi-github"></i
+		      ></a>
+		       
+		      
+		    
+		  <div class="container">    
+		  
+		<a href="#top" ><button class="btn btn-blue"  style="float:right"><code style="color:white">Back to top</code></button></a>
+		        <br><br><br>
+	   </div>   
+		     
+  
+ </div>
+ </div>
+ 
+
+
+</body>
+<script>
+
+var count=0;
+
+function b1(){
+	count++;
+
+	 document.getElementById("b1").innerHTML = `<button type="button" onclick="bc1()" class="btn btn-warning">1</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b2(){
+	count++;
+
+	 document.getElementById("b2").innerHTML = `<button type="button" onclick="bc2()" class="btn btn-warning">2</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b3(){
+	count++;
+
+	 document.getElementById("b3").innerHTML = `<button type="button" onclick="bc3()" class="btn btn-warning">3</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b4(){
+	count++;
+
+	 document.getElementById("b4").innerHTML = `<button type="button" onclick="bc4()" class="btn btn-warning">4</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+
+
+function b5(){
+	count++;
+
+	 document.getElementById("b5").innerHTML = `<button type="button" onclick="bc5()" class="btn btn-warning">5</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b6(){
+	count++;
+
+	 document.getElementById("b6").innerHTML = `<button type="button" onclick="bc6()" class="btn btn-warning">6</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+
+function b7(){
+	count++;
+
+	 document.getElementById("b7").innerHTML = `<button type="button" onclick="bc7()" class="btn btn-warning">7</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button></a>`;
+}
+function b8(){
+	count++;
+
+	 document.getElementById("b8").innerHTML = `<button type="button" onclick="bc8()" class="btn btn-warning">8</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button> </a> `;
+}
+
+function b9(){
+	count++;
+
+	 document.getElementById("b9").innerHTML = `<button type="button" onclick="bc9()" class="btn btn-warning">9</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button></a>`;
+}
+function b10(){
+	count++;
+
+	 document.getElementById("b10").innerHTML = `<button type="button" onclick="bc10()" class="btn btn-warning">10</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  <a href="book.html">`;
+}
+
+function b11(){
+	count++;
+
+	 document.getElementById("b11").innerHTML = `<button type="button" onclick="bc11()" class="btn btn-warning">11</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b12(){
+	count++;
+
+	 document.getElementById("b12").innerHTML = `<button type="button" onclick="bc12()" class="btn btn-warning">12</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">  `;
+}
+function b13(){
+	count++;
+
+	 document.getElementById("b13").innerHTML = `<button type="button" onclick="bc13()" class="btn btn-warning">13</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">`;
+}
+function b14(){
+	count++;
+
+	 document.getElementById("b14").innerHTML = `<button type="button" onclick="bc14()" class="btn btn-warning">14</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button><a href="book.html">  `;
+}
+function b15(){
+	count++;
+
+	 document.getElementById("b15").innerHTML = `<button type="button" onclick="bc15()" class="btn btn-warning">15</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<a href="book.html"><button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>`;
+}
+function b16(){
+	count++;
+
+	 document.getElementById("b16").innerHTML = `<button type="button" onclick="bc16()" class="btn btn-warning">16</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+}
+function b17(){
+	
+	count++;
+
+	 document.getElementById("b17").innerHTML = `<button type="button" onclick="bc17()" class="btn btn-warning">17</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>`;
+}
+function b18(){
+	count++;
+
+	 document.getElementById("b18").innerHTML = `<button type="button" onclick="bc18()" class="btn btn-warning">18</button>`;
+	 
+	 document.getElementById("ok").innerHTML = `<button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+}
+
+
+function bc1(){
+	count--;
+document.getElementById("b1").innerHTML= ` <button type="button"  onclick="b1()" class="btn btn-success">1</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc2(){
+	count--;
+	document.getElementById("b2").innerHTML= ` <button type="button"  onclick="b2()"class="btn btn-success">2</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+
+function bc3(){
+	count--;
+document.getElementById("b3").innerHTML= ` <button type="button"  onclick="b3()" class="btn btn-success">3</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc4(){
+	count--;
+	document.getElementById("b4").innerHTML= ` <button type="button"  onclick="b4()"class="btn btn-success">4</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc5(){
+	count--;
+document.getElementById("b5").innerHTML= ` <button type="button"  onclick="b5()" class="btn btn-success">5</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc6(){
+	count--;
+	document.getElementById("b6").innerHTML= ` <button type="button"  onclick="b6()"class="btn btn-success">6</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}	
+function bc7(){
+	count--;
+document.getElementById("b7").innerHTML= ` <button type="button"  onclick="b7()" class="btn btn-success">7</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc8(){
+	count--;
+	document.getElementById("b8").innerHTML= ` <button type="button"  onclick="b8()"class="btn btn-success">8</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc9(){
+	count--;
+document.getElementById("b9").innerHTML= ` <button type="button"  onclick="b9()" class="btn btn-success">9</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc10(){
+	count--;
+	document.getElementById("b10").innerHTML= ` <button type="button"  onclick="b10()"class="btn btn-success">10</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc11(){
+	count--;
+document.getElementById("b11").innerHTML= ` <button type="button"  onclick="b11()" class="btn btn-success">11</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc12(){
+	count--;
+	document.getElementById("b12").innerHTML= ` <button type="button"  onclick="b12()"class="btn btn-success">12</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc13(){
+	count--;
+document.getElementById("b13").innerHTML= ` <button type="button"  onclick="b13()" class="btn btn-success">13</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc14(){
+	count--;
+	document.getElementById("b14").innerHTML= ` <button type="button"  onclick="b14()"class="btn btn-success">14</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc15(){
+	count--;
+document.getElementById("b15").innerHTML= ` <button type="button"  onclick="b15()" class="btn btn-success">15</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc16(){
+	count--;
+	document.getElementById("b16").innerHTML= ` <button type="button"  onclick="b16()"class="btn btn-success">16</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc17(){
+	count--;
+document.getElementById("b17").innerHTML= ` <button type="button"  onclick="b17()" class="btn btn-success">17</button>`;
+if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+function bc18(){
+	count--;
+	document.getElementById("b18").innerHTML= ` <button type="button"  onclick="b18()"class="btn btn-success">18</button>`;
+	if(count==0)
+	document.getElementById("ok").innerHTML = "";
+	else
+		document.getElementById("ok").innerHTML =` <button type="button"  class="btn btn-danger">pay ` + count * 200 + ` </button>  `;
+	}
+
+
+</script>
+</html>
